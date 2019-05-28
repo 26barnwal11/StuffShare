@@ -1,0 +1,11 @@
+h1 {
+    text-align: left;
+    height: 100px;
+}
+
+header {
+    margin-top: -6px;
+    height: 80px;
+    background-color: #809BA6;
+    border: 2px solid #003366;
+}
