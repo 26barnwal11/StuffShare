@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -74,7 +74,21 @@
             <button class="btn btn-info btn-arrow-right" id="ShowStep3" onClick="showSteps('ShowStep3')">Step 3</button>
             <button class="btn btn-info btn-arrow-right" id="ShowStep4" onClick="showSteps('ShowStep4')">Step 4</button>
             <div id="iam1" style="background-color: #e9e9e9; height: 600px; width: 100%; display:block">
-                <b>I am step 1</b>
+                <div class="container">
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <label for="login">Username</label>
+                            <input class="form-control" placeholder="Login Username" type="text" id="login" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" placeholder="Login Password" type="password" id="password" required>
+                        </div>
+                    </form>
+                    <button class="btn btn-primary" style="background-color: #337ab7;">Login</button>
+                    <button class="btn btn-info btn-arrow-right" onClick="showSteps('ShowStep2')">Next</button>
+                </div>
             </div>
             <div id="iam2" style="background-color: #e9e9e9; height:600px; width: 100%; display:none">
                 <div class="container">
@@ -106,15 +120,73 @@
                             <input type="file" name="fileToUpload" id="img">
                             <input type="submit" class="default" value="Upload Image" name="submit">
                         </div>
-                        <button class="btn btn-info btn-arrow-right" onClick="showSteps('ShowStep3')">Next page</button>
+                        <button class="btn btn-info btn-arrow-right" onClick="showSteps('ShowStep3')">Next</button>
                     </form>
                 </div>
             </div>
             <div id="iam3" style="background-color: #e9e9e9; height: 600px; width: 100%; display:none">
-                <b>I am step 3</b>
+                <div class="container">
+                    <h3>Addressing Detail : </h3>
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <label for="house_no">House Number : </label>
+                            <input class="form-control" placeholder="" type="text" id="house_no" required>
+                            <label for="street_name">Street Name : </label>
+                            <input class="form-control" placeholder="" type="text" id="street_name" required>
+                            <label for="pincode">Pincode : </label>
+                            <input class="form-control" placeholder="" type="text" id="pincode" required>
+                            <label for="district">District : </label>
+                            <input class="form-control" placeholder="" type="text" id="district" required>
+                            <label for="state" class="text_color">State : </label>
+                            <select class="form-control default" id="state">
+                                <option>SELECT : </option>
+                                <option>Andaman and Nicobar</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chandigarh</option>
+                                <option>Chhattisgarh</option>
+                                <option>Dadar and Nagar Haveli</option>
+                                <option>Daman and Diu</option>
+                                <option>Delhi</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jammu and Kashmir</option>
+                                <option>Jharkhand</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Lakshadweep</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Odisha</option>
+                                <option>Puducherry</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Telangana</option>
+                                <option>Tripura</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Uttarakhand</option>
+                                <option>West Bengal</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-info btn-arrow-right" onClick="showSteps('ShowStep4')">Next</button>
+                    </form>
+
+                </div>
             </div>
             <div id="iam4" style="background-color: #e9e9e9; height: 600px; width: 100%; display:none">
-                <b>I am step 4</b>
+                <h3>Payment Mode</h3>
+                <button class="btn btn-info btn-arrow-right" onClick="window.location.href= 'index.html';">Submit</button>
             </div>
         </div>
     </nav>

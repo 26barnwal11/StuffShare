@@ -102,3 +102,8 @@ body {
         border: 1px solid #ccc;
     }
 }
+.sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}

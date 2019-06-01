@@ -63,3 +63,7 @@ function showSteps(ele) {
         btntype1.style.backgroundColor= '#5bc0de';
     }
 }
+function next2() {
+    document.getElementById("iam3").style.display='block';
+
+}
